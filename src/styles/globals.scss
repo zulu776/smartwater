@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .SidebarList {
+    @apply text-white font-bold;
+  }
+
+  .liList {
+    @apply m-3 ml-5 flex;
+  }
+}

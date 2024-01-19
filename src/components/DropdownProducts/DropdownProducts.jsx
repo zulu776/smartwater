@@ -17,7 +17,7 @@ const DropdownProducts = ({
     infoClient[3]?.title,
     infoClient[4]?.title,
   ];
-  console.log(infoClient);
+  // console.log(infoClient);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);

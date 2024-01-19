@@ -4,6 +4,15 @@ import mycheck from './images/bank-check.png';
 import Dropdown from './components/Dropdown/Dropdown';
 import DropdownProducts from './components/DropdownProducts/DropdownProducts';
 import Cantidad from './components/Cantidad/Cantidad';
+import Home from './styles/home.png';
+import Group from './styles/multiple-users-silhouette.png';
+import Maps from './styles/maps-and-flags.png';
+import Truck from './styles/truck.png';
+import Ventas from './styles/cashier-machine.png';
+import Pedidos from './styles/order.png';
+import Prestamo from './styles/file.png';
+import Trend from './styles/trend.png';
+import Config from './styles/gear.png';
 
 function App() {
   const [perfiles, setPerfiles] = useState([]);
@@ -47,10 +56,54 @@ function App() {
     <div className='h-screen w-screen flex '>
       {/* SIDEBAR */}
       <section className='w-2/12'>
-        <div className=' h-full bg-base-blue flex justify-center'>
-          <p className='text-2xl font-bold text-light-blue my-6'>
+        <div className=' h-full bg-base-blue flex flex-col '>
+          <p className='text-2xl font-bold text-light-blue my-6 text-center'>
             Smart<span className='text-white'>water</span>
           </p>
+          <div>
+            <ul className=''>
+              <li className='liList '>
+                <img className='size-6 mr-4' src={Home} alt='NOT FOUND' />
+                <p className='SidebarList'>Inicio</p>
+              </li>
+              <li className='liList'>
+                <img className='size-6 mr-4' src={Group} alt='NOT FOUND' />
+                <p className='SidebarList'>Clientes</p>
+              </li>
+              <li className='liList'>
+                <img className='size-6 mr-4' src={Maps} alt='NOT FOUND' />
+                <p className='SidebarList'>Mapa de clientes</p>
+              </li>
+              <li className='liList'>
+                <img className='size-6 mr-4' src={Ventas} alt='NOT FOUND' />
+                <p className='SidebarList'>Monitoreo de distribuidoras</p>
+              </li>
+              <li className='liList'>
+                <img className='size-6 mr-4' src={Truck} alt='NOT FOUND' />
+                <p className='SidebarList'>Ventas</p>
+              </li>
+              <li className='liList'>
+                <img className='size-6 mr-4' src={Pedidos} alt='NOT FOUND' />
+                <p className='SidebarList'>Pedidos</p>
+              </li>
+              <li className='liList'>
+                <img className='size-6 mr-4' src={Prestamo} alt='NOT FOUND' />
+                <p className='SidebarList'>Préstamos</p>
+              </li>
+              <li className='liList'>
+                <img className='size-6 mr-4' src={Trend} alt='NOT FOUND' />
+                <p className='SidebarList'>Finanzas</p>
+              </li>
+              <li className='liList'>
+                <img className='size-6 mr-4' src={Trend} alt='NOT FOUND' />
+                <p className='SidebarList'>Reportes</p>
+              </li>
+              <li className='liList'>
+                <img className='size-6 mr-4' src={Config} alt='NOT FOUND' />
+                <p className='SidebarList'>Configuración</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section className='w-full px-4'>
