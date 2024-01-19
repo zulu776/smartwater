@@ -6,11 +6,11 @@ const Dropdown = ({ infoClient }) => {
 
   const options = [
     'Cliente',
-    infoClient[0].name.first + ' ' + infoClient[0].name.last,
-    infoClient[1].name.first + ' ' + infoClient[1].name.last,
-    infoClient[2].name.first + ' ' + infoClient[2].name.last,
-    infoClient[3].name.first + ' ' + infoClient[3].name.last,
-    infoClient[4].name.first + ' ' + infoClient[4].name.last,
+    infoClient?.[0]?.name?.first + ' ' + infoClient?.[0]?.name?.last,
+    infoClient?.[1]?.name?.first + ' ' + infoClient?.[1]?.name?.last,
+    infoClient?.[2]?.name?.first + ' ' + infoClient?.[2]?.name?.last,
+    infoClient?.[3]?.name?.first + ' ' + infoClient?.[3]?.name?.last,
+    infoClient?.[4]?.name?.first + ' ' + infoClient?.[4]?.name?.last,
   ];
 
   const toggleDropdown = () => {
@@ -37,7 +37,7 @@ const Dropdown = ({ infoClient }) => {
         <div className='border-2 z-10'>
           {options && (
             <div className='absolute z-20'>
-              {options.map((option) => (
+              {options?.map((option) => (
                 <div
                   className='text-xs'
                   key={option}

@@ -60,7 +60,7 @@ function App() {
         {/* arreglo de cajas */}
         <div>
           <div className='w-full h-full flex'>
-            {nombres.map((el) => (
+            {nombres?.map((el) => (
               <div className='w-[15%] h-[14%] my-5 mr-5 '>
                 <div className='w-full h-full rounded-2xl border-2'>
                   <p className='my-1 mx-3 font-bold '>{el.nombre}</p>
@@ -129,7 +129,7 @@ function App() {
                 <p className='pr-2 font-bold text-lg'>Realizar pedido</p>
               </div>
               <div className='ml-6 w-[90%] h-[25%] relative'>
-                <Dropdown infoClient={perfiles.results} />
+                <Dropdown infoClient={perfiles?.results} />
               </div>
               <div className='ml-6 w-[90%] h-[25%]  '>
                 <DropdownProducts
